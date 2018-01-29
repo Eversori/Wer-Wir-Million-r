@@ -29,56 +29,73 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.normalPlay = new System.Windows.Forms.Button();
-            this.riskButton = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonNormalPlay = new System.Windows.Forms.Button();
+            this.buttonRiskPlay = new System.Windows.Forms.Button();
+            this.labelname = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // normalPlay
+            // buttonNormalPlay
             // 
-            this.normalPlay.Location = new System.Drawing.Point(1002, 29);
-            this.normalPlay.Name = "normalPlay";
-            this.normalPlay.Size = new System.Drawing.Size(166, 78);
-            this.normalPlay.TabIndex = 0;
-            this.normalPlay.Text = "Normal";
-            this.normalPlay.UseVisualStyleBackColor = true;
+            this.buttonNormalPlay.BackColor = System.Drawing.Color.Goldenrod;
+            this.buttonNormalPlay.FlatAppearance.BorderSize = 5;
+            this.buttonNormalPlay.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonNormalPlay.ForeColor = System.Drawing.Color.Teal;
+            this.buttonNormalPlay.Location = new System.Drawing.Point(1009, 64);
+            this.buttonNormalPlay.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.buttonNormalPlay.Name = "buttonNormalPlay";
+            this.buttonNormalPlay.Size = new System.Drawing.Size(216, 76);
+            this.buttonNormalPlay.TabIndex = 0;
+            this.buttonNormalPlay.Text = "Normal";
+            this.buttonNormalPlay.UseVisualStyleBackColor = false;
             // 
-            // riskButton
+            // buttonRiskPlay
             // 
-            this.riskButton.Location = new System.Drawing.Point(1002, 141);
-            this.riskButton.Name = "riskButton";
-            this.riskButton.Size = new System.Drawing.Size(166, 78);
-            this.riskButton.TabIndex = 1;
-            this.riskButton.Text = "Risiko";
-            this.riskButton.UseVisualStyleBackColor = true;
+            this.buttonRiskPlay.BackColor = System.Drawing.Color.Goldenrod;
+            this.buttonRiskPlay.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.buttonRiskPlay.FlatAppearance.BorderSize = 5;
+            this.buttonRiskPlay.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRiskPlay.ForeColor = System.Drawing.Color.Maroon;
+            this.buttonRiskPlay.Location = new System.Drawing.Point(1009, 194);
+            this.buttonRiskPlay.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.buttonRiskPlay.Name = "buttonRiskPlay";
+            this.buttonRiskPlay.Size = new System.Drawing.Size(216, 76);
+            this.buttonRiskPlay.TabIndex = 1;
+            this.buttonRiskPlay.Text = "Risiko";
+            this.buttonRiskPlay.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // labelname
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(98, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.labelname.AutoSize = true;
+            this.labelname.BackColor = System.Drawing.Color.Transparent;
+            this.labelname.ForeColor = System.Drawing.Color.White;
+            this.labelname.Location = new System.Drawing.Point(17, 64);
+            this.labelname.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.labelname.Name = "labelname";
+            this.labelname.Size = new System.Drawing.Size(274, 31);
+            this.labelname.TabIndex = 2;
+            this.labelname.Text = "Bitte Name eingeben:";
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(298, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.textBoxName.Location = new System.Drawing.Point(104, 114);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(287, 38);
+            this.textBoxName.TabIndex = 3;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.riskButton);
-            this.Controls.Add(this.normalPlay);
+            this.ClientSize = new System.Drawing.Size(1284, 681);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.labelname);
+            this.Controls.Add(this.buttonRiskPlay);
+            this.Controls.Add(this.buttonNormalPlay);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "Form1";
             this.Text = "Wer wird Millionär";
             this.ResumeLayout(false);
@@ -88,10 +105,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button normalPlay;
-        private System.Windows.Forms.Button riskButton;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button buttonNormalPlay;
+        private System.Windows.Forms.Button buttonRiskPlay;
+        private System.Windows.Forms.Label labelname;
+        private System.Windows.Forms.TextBox textBoxName;
     }
 }
 
