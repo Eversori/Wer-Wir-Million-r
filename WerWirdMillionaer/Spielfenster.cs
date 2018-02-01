@@ -80,7 +80,18 @@ namespace WerWirdMillionaer
             }
 
             Random r = new Random();
+            
+            int fragenummer = r.Next(0, moeglicheFragen.Count-1);
 
+            labelFrage.Text= moeglicheFragen[fragenummer].Inhalt;
+            //ButtonA
+            buttonA.Text = moeglicheFragen[fragenummer].Antworten[0].Inhalt;
+            //ButtonB
+            buttonB.Text = moeglicheFragen[fragenummer].Antworten[1].Inhalt;
+            //ButtonC
+            buttonC.Text = moeglicheFragen[fragenummer].Antworten[2].Inhalt;
+            //ButtonD
+            buttonD.Text = moeglicheFragen[fragenummer].Antworten[3].Inhalt;
 
 
         }
@@ -125,20 +136,23 @@ namespace WerWirdMillionaer
                 cmd = con.CreateCommand();
                 cmd.CommandText = "Select * from Antworten";
                 reader = cmd.ExecuteReader();
-                string frage;
+                int frage=0;
 
-                int i = 0;
+                
                 while (reader.Read())
                 {
                     Antwort a = new Antwort();
                     a.Inhalt = Convert.ToString(CheckDBNull(reader[0]));
-                    frage = Convert.ToString(CheckDBNull(reader[1]));
+                    frage = Convert.ToInt32(CheckDBNull(reader[1]));
                     a.Richtig = Convert.ToBoolean(CheckDBNull(reader[2]));
-                    i = 0;
-                    while(!frage.Equals(fragen[i].FrageID))
+                    
+                    
+                    for(int i=0;i<fragen.Count;i++)
                     {
-                        fragen[i].Antworten.Add(a);
-                        i++;
+                        if (frage == fragen[i].FrageID)
+                        {
+                            fragen[i].Antworten.Add(a);
+                        }
                     }
                 }
 
