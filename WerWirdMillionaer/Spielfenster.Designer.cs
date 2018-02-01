@@ -158,6 +158,7 @@
             this.buttonZusatzJoker.TabIndex = 9;
             this.buttonZusatzJoker.Text = "Zusatzjoker";
             this.buttonZusatzJoker.UseVisualStyleBackColor = true;
+            this.buttonZusatzJoker.Visible = false;
             this.buttonZusatzJoker.Click += new System.EventHandler(this.buttonZusatzJoker_Click);
             // 
             // pictureBox1
