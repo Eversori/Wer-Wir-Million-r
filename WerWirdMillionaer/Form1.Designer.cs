@@ -41,7 +41,7 @@
             this.buttonNormalPlay.FlatAppearance.BorderSize = 5;
             this.buttonNormalPlay.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNormalPlay.ForeColor = System.Drawing.Color.Teal;
-            this.buttonNormalPlay.Location = new System.Drawing.Point(1009, 64);
+            this.buttonNormalPlay.Location = new System.Drawing.Point(826, 41);
             this.buttonNormalPlay.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.buttonNormalPlay.Name = "buttonNormalPlay";
             this.buttonNormalPlay.Size = new System.Drawing.Size(216, 76);
@@ -56,7 +56,7 @@
             this.buttonRiskPlay.FlatAppearance.BorderSize = 5;
             this.buttonRiskPlay.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRiskPlay.ForeColor = System.Drawing.Color.Maroon;
-            this.buttonRiskPlay.Location = new System.Drawing.Point(1009, 194);
+            this.buttonRiskPlay.Location = new System.Drawing.Point(826, 145);
             this.buttonRiskPlay.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.buttonRiskPlay.Name = "buttonRiskPlay";
             this.buttonRiskPlay.Size = new System.Drawing.Size(216, 76);
@@ -69,7 +69,7 @@
             this.labelname.AutoSize = true;
             this.labelname.BackColor = System.Drawing.Color.Transparent;
             this.labelname.ForeColor = System.Drawing.Color.White;
-            this.labelname.Location = new System.Drawing.Point(17, 64);
+            this.labelname.Location = new System.Drawing.Point(17, 23);
             this.labelname.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.labelname.Name = "labelname";
             this.labelname.Size = new System.Drawing.Size(274, 31);
@@ -78,7 +78,7 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(104, 114);
+            this.textBoxName.Location = new System.Drawing.Point(36, 79);
             this.textBoxName.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(287, 38);
@@ -89,7 +89,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1284, 681);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1084, 581);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelname);
             this.Controls.Add(this.buttonRiskPlay);
