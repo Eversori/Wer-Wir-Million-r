@@ -52,6 +52,7 @@ namespace WerWirdMillionaer
             risiko = false;
             spiel1 = new Spielfenster(risiko, name);
             spiel1.Visible = true;
+            
         }
 
         private void buttonRiskPlay_Click(object sender, EventArgs e)
@@ -60,6 +61,7 @@ namespace WerWirdMillionaer
             risiko = true;
             spiel1 = new Spielfenster(risiko, name);
             spiel1.Visible = true;
+            
         }
     }
 }

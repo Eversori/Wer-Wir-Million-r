@@ -129,6 +129,7 @@
             this.button5050.TabIndex = 6;
             this.button5050.Text = "50 : 50";
             this.button5050.UseVisualStyleBackColor = true;
+            this.button5050.Click += new System.EventHandler(this.button5050_Click);
             // 
             // buttonTeleJoker
             // 
@@ -138,6 +139,7 @@
             this.buttonTeleJoker.TabIndex = 7;
             this.buttonTeleJoker.Text = "Telefonjoker";
             this.buttonTeleJoker.UseVisualStyleBackColor = true;
+            this.buttonTeleJoker.Click += new System.EventHandler(this.buttonTeleJoker_Click);
             // 
             // buttonPubJoker
             // 
@@ -147,6 +149,7 @@
             this.buttonPubJoker.TabIndex = 8;
             this.buttonPubJoker.Text = "Publikumsjoker";
             this.buttonPubJoker.UseVisualStyleBackColor = true;
+            this.buttonPubJoker.Click += new System.EventHandler(this.buttonPubJoker_Click);
             // 
             // buttonZusatzJoker
             // 
@@ -156,6 +159,8 @@
             this.buttonZusatzJoker.TabIndex = 9;
             this.buttonZusatzJoker.Text = "Zusatzjoker";
             this.buttonZusatzJoker.UseVisualStyleBackColor = true;
+            this.buttonZusatzJoker.Visible = false;
+            this.buttonZusatzJoker.Click += new System.EventHandler(this.buttonZusatzJoker_Click);
             // 
             // pictureBox1
             // 
