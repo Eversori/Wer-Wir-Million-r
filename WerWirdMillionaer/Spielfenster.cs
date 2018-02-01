@@ -18,6 +18,10 @@ namespace WerWirdMillionaer
         private string spielername;
         private Boolean risiko;
         private int stufe=1;
+        private Joker joker1;
+        private Joker joker2;
+        private Joker joker3;
+        private Joker joker4;
 
         public string Spielername
         {
@@ -42,6 +46,7 @@ namespace WerWirdMillionaer
 
             this.risiko = risiko;
             this.spielername = spielername;
+            checkJoker();
         }
 
         private void loadFrage()
@@ -155,6 +160,38 @@ namespace WerWirdMillionaer
         private void Spielfenster_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkJoker()
+        {
+            joker1 = new Joker50();
+            joker2 = new Publikumsjoker();
+            joker3 = new Telefonjoker();
+            if (risiko)
+            {
+                joker4 = new Risikojoker();
+                buttonZusatzJoker.Visible = true;
+            }
+        }
+
+        private void button5050_Click(object sender, EventArgs e)
+        {
+            joker1.Benutzt = true;
+        }
+
+        private void buttonTeleJoker_Click(object sender, EventArgs e)
+        {
+            joker2.Benutzt = true;
+        }
+
+        private void buttonPubJoker_Click(object sender, EventArgs e)
+        {
+            joker3.Benutzt = true;
+        }
+
+        private void buttonZusatzJoker_Click(object sender, EventArgs e)
+        {
+            joker3.Benutzt = true;
         }
     }
 }
