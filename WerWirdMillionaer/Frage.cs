@@ -8,7 +8,7 @@ namespace WerWirdMillionaer
 {
     class Frage
     {
-        private String frageID;
+        private int frageID;
         private String inhalt;
         private Int32 level;
         private List<Antwort> antworten;
@@ -44,7 +44,7 @@ namespace WerWirdMillionaer
             }
         }
 
-        public string FrageID
+        public int FrageID
         {
             get
             {
