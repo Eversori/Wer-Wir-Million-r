@@ -63,16 +63,6 @@ namespace WerWirdMillionaer.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _91OXosjxZdL {
-            get {
-                object obj = ResourceManager.GetObject("91OXosjxZdL", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Antwortkachel {
             get {
                 object obj = ResourceManager.GetObject("Antwortkachel", resourceCulture);
@@ -83,9 +73,9 @@ namespace WerWirdMillionaer.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Jauch1 {
+        internal static System.Drawing.Bitmap Hintergrund {
             get {
-                object obj = ResourceManager.GetObject("Jauch1", resourceCulture);
+                object obj = ResourceManager.GetObject("Hintergrund", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,19 +83,9 @@ namespace WerWirdMillionaer.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap moderator_guenther_jauch {
+        internal static System.Drawing.Bitmap TelefonJoker {
             get {
-                object obj = ResourceManager.GetObject("moderator-guenther-jauch", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap seit_1999_moderiert_guenther_jauch_wer_wird_millionaer_ {
-            get {
-                object obj = ResourceManager.GetObject("seit-1999-moderiert-guenther-jauch-wer-wird-millionaer-", resourceCulture);
+                object obj = ResourceManager.GetObject("TelefonJoker", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
