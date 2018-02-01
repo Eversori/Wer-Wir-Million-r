@@ -8,9 +8,47 @@ namespace WerWirdMillionaer
 {
     class Joker
     {
-        Boolean benutzt;
-        String name;
-        Boolean viable;
+        private Boolean benutzt;
+        private String name;
+        private Boolean viable;
 
+        public bool Benutzt
+        {
+            get
+            {
+                return benutzt;
+            }
+
+            set
+            {
+                benutzt = value;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }
+
+        public bool Viable
+        {
+            get
+            {
+                return viable;
+            }
+
+            set
+            {
+                viable = value;
+            }
+        }
     }
 }
