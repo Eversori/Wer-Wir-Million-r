@@ -14,12 +14,29 @@ namespace WerWirdMillionaer
     public partial class Spielfenster : Form
     {
         private List<Frage> fragen;
+        private string spielername;
+        private Boolean risiko;
 
-        public Spielfenster(Boolean risiko)
+        public string Spielername
+        {
+            get
+            {
+                return spielername;
+            }
+
+            set
+            {
+                spielername = value;
+            }
+        }
+
+        public Spielfenster(Boolean risiko, string spielername)
         {
             InitializeComponent();
             verbindeDatenbank();
             fragen = new List<Frage>();
+            this.risiko = risiko;
+            this.spielername = spielername;
         }
 
         private void verbindeDatenbank()
