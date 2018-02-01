@@ -8,24 +8,30 @@ namespace WerWirdMillionaer
 {
     class Frage
     {
-        private String Inhalt;
-        private int level;
-        private Antwort antworten;
+        private String frageID;
+        private String inhalt;
+        private Int32 level;
+        private Antwort[] antworten;
 
-        public string Inhalt1
+        public Frage()
+        {
+            Antworten = new Antwort[4];
+        }
+
+        public string Inhalt
         {
             get
             {
-                return Inhalt;
+                return inhalt;
             }
 
             set
             {
-                Inhalt = value;
+                inhalt = value;
             }
         }
 
-        public int Level
+        public Int32 Level
         {
             get
             {
@@ -35,6 +41,32 @@ namespace WerWirdMillionaer
             set
             {
                 level = value;
+            }
+        }
+
+        internal Antwort[] Antworten
+        {
+            get
+            {
+                return antworten;
+            }
+
+            set
+            {
+                antworten = value;
+            }
+        }
+
+        public string FrageID
+        {
+            get
+            {
+                return frageID;
+            }
+
+            set
+            {
+                frageID = value;
             }
         }
     }
