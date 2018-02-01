@@ -32,7 +32,6 @@
             this.buttonC = new System.Windows.Forms.Button();
             this.buttonB = new System.Windows.Forms.Button();
             this.buttonD = new System.Windows.Forms.Button();
-            this.pictureBoxFrage = new System.Windows.Forms.PictureBox();
             this.labelFrage = new System.Windows.Forms.Label();
             this.button5050 = new System.Windows.Forms.Button();
             this.buttonTeleJoker = new System.Windows.Forms.Button();
@@ -41,7 +40,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxJoker = new System.Windows.Forms.PictureBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFrage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJoker)).BeginInit();
             this.SuspendLayout();
@@ -102,24 +100,18 @@
             this.buttonD.Text = "Antwort D";
             this.buttonD.UseVisualStyleBackColor = true;
             // 
-            // pictureBoxFrage
-            // 
-            this.pictureBoxFrage.BackgroundImage = global::WerWirdMillionaer.Properties.Resources.Antwortkachel;
-            this.pictureBoxFrage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxFrage.Location = new System.Drawing.Point(360, 351);
-            this.pictureBoxFrage.Name = "pictureBoxFrage";
-            this.pictureBoxFrage.Size = new System.Drawing.Size(559, 82);
-            this.pictureBoxFrage.TabIndex = 4;
-            this.pictureBoxFrage.TabStop = false;
-            // 
             // labelFrage
             // 
-            this.labelFrage.AutoSize = true;
+            this.labelFrage.BackColor = System.Drawing.Color.Transparent;
             this.labelFrage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFrage.Location = new System.Drawing.Point(590, 377);
+            this.labelFrage.ForeColor = System.Drawing.Color.White;
+            this.labelFrage.Image = global::WerWirdMillionaer.Properties.Resources.Antwortkachel;
+            this.labelFrage.Location = new System.Drawing.Point(419, 346);
             this.labelFrage.Name = "labelFrage";
-            this.labelFrage.Size = new System.Drawing.Size(0, 25);
+            this.labelFrage.Size = new System.Drawing.Size(449, 85);
             this.labelFrage.TabIndex = 5;
+            this.labelFrage.Text = "Frage";
+            this.labelFrage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button5050
             // 
@@ -221,18 +213,15 @@
             this.Controls.Add(this.buttonTeleJoker);
             this.Controls.Add(this.button5050);
             this.Controls.Add(this.labelFrage);
-            this.Controls.Add(this.pictureBoxFrage);
             this.Controls.Add(this.buttonD);
             this.Controls.Add(this.buttonB);
             this.Controls.Add(this.buttonC);
             this.Controls.Add(this.buttonA);
             this.Name = "Spielfenster";
             this.Text = "Spielfenster";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFrage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJoker)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -242,7 +231,6 @@
         private System.Windows.Forms.Button buttonC;
         private System.Windows.Forms.Button buttonB;
         private System.Windows.Forms.Button buttonD;
-        private System.Windows.Forms.PictureBox pictureBoxFrage;
         private System.Windows.Forms.Label labelFrage;
         private System.Windows.Forms.Button button5050;
         private System.Windows.Forms.Button buttonTeleJoker;
