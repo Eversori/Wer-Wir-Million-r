@@ -63,6 +63,26 @@ namespace WerWirdMillionaer.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _91OXosjxZdL {
+            get {
+                object obj = ResourceManager.GetObject("91OXosjxZdL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Antwortkachel {
+            get {
+                object obj = ResourceManager.GetObject("Antwortkachel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Jauch1 {
             get {
                 object obj = ResourceManager.GetObject("Jauch1", resourceCulture);
