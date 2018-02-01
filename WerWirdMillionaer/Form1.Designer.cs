@@ -48,6 +48,7 @@
             this.buttonNormalPlay.TabIndex = 0;
             this.buttonNormalPlay.Text = "Normal";
             this.buttonNormalPlay.UseVisualStyleBackColor = false;
+            this.buttonNormalPlay.Click += new System.EventHandler(this.starteNormalesSpiel);
             // 
             // buttonRiskPlay
             // 
@@ -63,6 +64,7 @@
             this.buttonRiskPlay.TabIndex = 1;
             this.buttonRiskPlay.Text = "Risiko";
             this.buttonRiskPlay.UseVisualStyleBackColor = false;
+            this.buttonRiskPlay.Click += new System.EventHandler(this.buttonRiskPlay_Click);
             // 
             // labelname
             // 
