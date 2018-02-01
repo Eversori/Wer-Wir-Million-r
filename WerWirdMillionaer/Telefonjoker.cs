@@ -8,6 +8,14 @@ namespace WerWirdMillionaer
 {
     class Telefonjoker : Joker
     {
+        public Telefonjoker()
+        {
+            benutzeJoker();
+        }
 
+        private void benutzeJoker()
+        {
+            //TODO: Joker benutzen editieren!
+        }
     }
 }
