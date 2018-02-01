@@ -47,56 +47,78 @@
             // 
             // buttonA
             // 
-            this.buttonA.Location = new System.Drawing.Point(130, 505);
+            this.buttonA.BackgroundImage = global::WerWirdMillionaer.Properties.Resources.Antwortkachel;
+            this.buttonA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonA.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonA.Location = new System.Drawing.Point(193, 499);
             this.buttonA.Name = "buttonA";
-            this.buttonA.Size = new System.Drawing.Size(325, 23);
+            this.buttonA.Size = new System.Drawing.Size(447, 60);
             this.buttonA.TabIndex = 0;
             this.buttonA.Text = "Antwort A";
             this.buttonA.UseVisualStyleBackColor = true;
             // 
             // buttonC
             // 
-            this.buttonC.Location = new System.Drawing.Point(130, 568);
+            this.buttonC.BackgroundImage = global::WerWirdMillionaer.Properties.Resources.Antwortkachel;
+            this.buttonC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonC.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonC.Location = new System.Drawing.Point(193, 565);
             this.buttonC.Name = "buttonC";
-            this.buttonC.Size = new System.Drawing.Size(325, 23);
+            this.buttonC.Size = new System.Drawing.Size(447, 60);
             this.buttonC.TabIndex = 1;
             this.buttonC.Text = "Antwort C";
             this.buttonC.UseVisualStyleBackColor = true;
             // 
             // buttonB
             // 
-            this.buttonB.Location = new System.Drawing.Point(803, 505);
+            this.buttonB.BackgroundImage = global::WerWirdMillionaer.Properties.Resources.Antwortkachel;
+            this.buttonB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonB.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonB.Location = new System.Drawing.Point(646, 499);
             this.buttonB.Name = "buttonB";
-            this.buttonB.Size = new System.Drawing.Size(325, 23);
+            this.buttonB.Size = new System.Drawing.Size(447, 60);
             this.buttonB.TabIndex = 2;
             this.buttonB.Text = "Antwort B";
             this.buttonB.UseVisualStyleBackColor = true;
             // 
             // buttonD
             // 
-            this.buttonD.Location = new System.Drawing.Point(803, 568);
+            this.buttonD.BackgroundImage = global::WerWirdMillionaer.Properties.Resources.Antwortkachel;
+            this.buttonD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonD.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonD.Location = new System.Drawing.Point(646, 565);
             this.buttonD.Name = "buttonD";
-            this.buttonD.Size = new System.Drawing.Size(325, 23);
+            this.buttonD.Size = new System.Drawing.Size(447, 60);
             this.buttonD.TabIndex = 3;
             this.buttonD.Text = "Antwort D";
             this.buttonD.UseVisualStyleBackColor = true;
             // 
             // pictureBoxFrage
             // 
-            this.pictureBoxFrage.Location = new System.Drawing.Point(486, 368);
+            this.pictureBoxFrage.BackgroundImage = global::WerWirdMillionaer.Properties.Resources.Antwortkachel;
+            this.pictureBoxFrage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxFrage.Location = new System.Drawing.Point(311, 352);
             this.pictureBoxFrage.Name = "pictureBoxFrage";
-            this.pictureBoxFrage.Size = new System.Drawing.Size(312, 50);
+            this.pictureBoxFrage.Size = new System.Drawing.Size(616, 82);
             this.pictureBoxFrage.TabIndex = 4;
             this.pictureBoxFrage.TabStop = false;
             // 
             // labelFrage
             // 
             this.labelFrage.AutoSize = true;
-            this.labelFrage.Location = new System.Drawing.Point(620, 389);
+            this.labelFrage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFrage.Location = new System.Drawing.Point(590, 377);
             this.labelFrage.Name = "labelFrage";
-            this.labelFrage.Size = new System.Drawing.Size(34, 13);
+            this.labelFrage.Size = new System.Drawing.Size(0, 25);
             this.labelFrage.TabIndex = 5;
-            this.labelFrage.Text = "Frage";
             // 
             // button5050
             // 
@@ -110,7 +132,7 @@
             // 
             // buttonTeleJoker
             // 
-            this.buttonTeleJoker.Location = new System.Drawing.Point(12, 50);
+            this.buttonTeleJoker.Location = new System.Drawing.Point(12, 66);
             this.buttonTeleJoker.Name = "buttonTeleJoker";
             this.buttonTeleJoker.Size = new System.Drawing.Size(116, 23);
             this.buttonTeleJoker.TabIndex = 7;
@@ -120,7 +142,7 @@
             // 
             // buttonPubJoker
             // 
-            this.buttonPubJoker.Location = new System.Drawing.Point(12, 79);
+            this.buttonPubJoker.Location = new System.Drawing.Point(12, 119);
             this.buttonPubJoker.Name = "buttonPubJoker";
             this.buttonPubJoker.Size = new System.Drawing.Size(116, 23);
             this.buttonPubJoker.TabIndex = 8;
@@ -130,7 +152,7 @@
             // 
             // buttonZusatzJoker
             // 
-            this.buttonZusatzJoker.Location = new System.Drawing.Point(12, 108);
+            this.buttonZusatzJoker.Location = new System.Drawing.Point(12, 171);
             this.buttonZusatzJoker.Name = "buttonZusatzJoker";
             this.buttonZusatzJoker.Size = new System.Drawing.Size(116, 23);
             this.buttonZusatzJoker.TabIndex = 9;
@@ -148,7 +170,7 @@
             // 
             // pictureBoxJoker
             // 
-            this.pictureBoxJoker.Location = new System.Drawing.Point(219, 79);
+            this.pictureBoxJoker.Location = new System.Drawing.Point(220, 50);
             this.pictureBoxJoker.Name = "pictureBoxJoker";
             this.pictureBoxJoker.Size = new System.Drawing.Size(100, 50);
             this.pictureBoxJoker.TabIndex = 10;
