@@ -39,6 +39,7 @@
             this.ClientSize = new System.Drawing.Size(1284, 641);
             this.Name = "Spielfenster";
             this.Text = "Spielfenster";
+            this.Load += new System.EventHandler(this.Spielfenster_Load);
             this.ResumeLayout(false);
 
         }
