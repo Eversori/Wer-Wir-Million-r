@@ -32,9 +32,10 @@ namespace WerWirdMillionaer
 
         public Spielfenster(Boolean risiko, string spielername)
         {
+            fragen = new List<Frage>();
             InitializeComponent();
             verbindeDatenbank();
-            fragen = new List<Frage>();
+
             this.risiko = risiko;
             this.spielername = spielername;
         }
@@ -81,17 +82,18 @@ namespace WerWirdMillionaer
                 reader = cmd.ExecuteReader();
                 string frage;
 
-
-                while(reader.Read())
+                int i = 0;
+                while (reader.Read())
                 {
                     Antwort a = new Antwort();
                     a.Inhalt = Convert.ToString(CheckDBNull(reader[0]));
                     frage = Convert.ToString(CheckDBNull(reader[1]));
                     a.Richtig = Convert.ToBoolean(CheckDBNull(reader[2]));
-                    int i = 0;
+                    i = 0;
                     while(!frage.Equals(fragen[i].FrageID))
                     {
                         fragen[i].Antworten.Add(a);
+                        i++;
                     }
                 }
 

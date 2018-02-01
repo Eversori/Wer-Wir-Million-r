@@ -15,7 +15,7 @@ namespace WerWirdMillionaer
 
         public Frage()
         {
-
+            antworten = new List<Antwort>();
         }
 
         public string Inhalt
