@@ -14,8 +14,10 @@ namespace WerWirdMillionaer
     public partial class Spielfenster : Form
     {
         private List<Frage> fragen;
+        private List<Frage> benuzteFragen;
         private string spielername;
         private Boolean risiko;
+        private int stufe=1;
 
         public string Spielername
         {
@@ -33,11 +35,49 @@ namespace WerWirdMillionaer
         public Spielfenster(Boolean risiko, string spielername)
         {
             fragen = new List<Frage>();
+            benuzteFragen = new List<Frage>();
             InitializeComponent();
             verbindeDatenbank();
+            loadFrage();
 
             this.risiko = risiko;
             this.spielername = spielername;
+        }
+
+        private void loadFrage()
+        {
+            int level=0;
+
+            if (stufe<=5)
+            {
+                level = 1;
+            }
+            else if(stufe<=10)
+            {
+                level = 2;
+            }
+            else if(stufe<=14)
+            {
+                level = 3;
+            }
+            else
+            {
+                level = 4;
+            }
+            List<Frage> moeglicheFragen = new List<Frage>();
+            for(int i=0;i<fragen.Count;i++)
+            {
+                if(fragen[i].FrageID==level)
+                {
+                    if(!benuzteFragen.Contains(fragen[i]))
+                    moeglicheFragen.Add(fragen[i]);
+                }
+            }
+
+            Random r = new Random();
+
+
+
         }
 
         private void verbindeDatenbank()
@@ -71,7 +111,7 @@ namespace WerWirdMillionaer
                 while(reader.Read())
                 {
                     Frage f = new Frage();
-                    f.FrageID =Convert.ToString(CheckDBNull( reader[0]));
+                    f.FrageID =Convert.ToInt32(CheckDBNull( reader[0]));
                     f.Inhalt = Convert.ToString(CheckDBNull(reader[1]));
                     f.Level = Convert.ToInt32(CheckDBNull(reader[2]));
                     fragen.Add(f);
