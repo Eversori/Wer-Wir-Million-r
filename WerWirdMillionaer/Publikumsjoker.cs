@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WerWirdMillionaer
 {
-    class Publikumsjoker
+    class Publikumsjoker : Joker
     {
     }
 }

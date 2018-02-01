@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WerWirdMillionaer
 {
-    class Joker50
+    class Joker50 : Joker
     {
     }
 }
