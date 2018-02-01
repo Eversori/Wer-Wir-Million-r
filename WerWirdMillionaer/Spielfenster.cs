@@ -59,7 +59,24 @@ namespace WerWirdMillionaer
                     fragen.Add(f);
                 }
 
-                cmd=con.
+                cmd = con.CreateCommand();
+                cmd.CommandText = "Select * from Antworten";
+                reader = cmd.ExecuteReader();
+                string frage;
+
+
+                while(reader.Read())
+                {
+                    Antwort a = new Antwort();
+                    a.Inhalt = Convert.ToString(CheckDBNull(reader[0]));
+                    frage = Convert.ToString(CheckDBNull(reader[1]));
+                    a.Richtig = Convert.ToBoolean(CheckDBNull(reader[2]));
+                    int i = 0;
+                    while(!frage.Equals(fragen[i].FrageID))
+                    {
+                        fragen[i].Antworten.Add(a);
+                    }
+                }
 
             }
 

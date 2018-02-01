@@ -11,11 +11,11 @@ namespace WerWirdMillionaer
         private String frageID;
         private String inhalt;
         private Int32 level;
-        private Antwort[] antworten;
+        private List<Antwort> antworten;
 
         public Frage()
         {
-            Antworten = new Antwort[4];
+
         }
 
         public string Inhalt
@@ -44,19 +44,6 @@ namespace WerWirdMillionaer
             }
         }
 
-        internal Antwort[] Antworten
-        {
-            get
-            {
-                return antworten;
-            }
-
-            set
-            {
-                antworten = value;
-            }
-        }
-
         public string FrageID
         {
             get
@@ -67,6 +54,19 @@ namespace WerWirdMillionaer
             set
             {
                 frageID = value;
+            }
+        }
+
+        internal List<Antwort> Antworten
+        {
+            get
+            {
+                return antworten;
+            }
+
+            set
+            {
+                antworten = value;
             }
         }
     }
