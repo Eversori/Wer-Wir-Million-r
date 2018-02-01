@@ -15,6 +15,7 @@ namespace WerWirdMillionaer
     {
         private List<Frage> fragen;
 
+
         public Spielfenster(Boolean risiko)
         {
             InitializeComponent();
@@ -43,13 +44,13 @@ namespace WerWirdMillionaer
                 MessageBox.Show("Datenbankfehler");
             }
 
-
+            //Wenn die conection funktioniert
             if (right)
             {
                 OleDbCommand cmd = con.CreateCommand();
                 cmd.CommandText = "Select * from Fragen";
                 OleDbDataReader reader = cmd.ExecuteReader();
-
+                //Auslesen der Fragen und in das list fragen hinzufügen
                 while(reader.Read())
                 {
                     Frage f = new Frage();
@@ -64,7 +65,7 @@ namespace WerWirdMillionaer
                 reader = cmd.ExecuteReader();
                 string frage;
 
-
+                //Auslesen der Antworten und den Fragen zuordnen
                 while(reader.Read())
                 {
                     Antwort a = new Antwort();
@@ -72,6 +73,7 @@ namespace WerWirdMillionaer
                     frage = Convert.ToString(CheckDBNull(reader[1]));
                     a.Richtig = Convert.ToBoolean(CheckDBNull(reader[2]));
                     int i = 0;
+                    //Frage zur Antwort suchen und einfügen in die antwortliste
                     while(!frage.Equals(fragen[i].FrageID))
                     {
                         fragen[i].Antworten.Add(a);
