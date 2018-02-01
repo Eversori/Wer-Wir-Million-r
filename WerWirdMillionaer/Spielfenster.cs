@@ -16,6 +16,7 @@ namespace WerWirdMillionaer
         private List<Frage> fragen;
         private string spielername;
         private Boolean risiko;
+        private Joker joker1;
 
         public string Spielername
         {
@@ -115,6 +116,26 @@ namespace WerWirdMillionaer
         private void Spielfenster_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5050_Click(object sender, EventArgs e)
+        {
+            joker1 = new Joker50();
+        }
+
+        private void buttonTeleJoker_Click(object sender, EventArgs e)
+        {
+            joker1 = new Telefonjoker();
+        }
+
+        private void buttonPubJoker_Click(object sender, EventArgs e)
+        {
+            joker1 = new Publikumsjoker();
+        }
+
+        private void buttonZusatzJoker_Click(object sender, EventArgs e)
+        {
+            joker1 = new Risikojoker();
         }
     }
 }
