@@ -8,8 +8,33 @@ namespace WerWirdMillionaer
 {
     class Antwort
     {
-        Frage frage;
-        String inhalt;
-        Boolean richtig;
+        private String inhalt;
+        private Boolean richtig;
+
+        public string Inhalt
+        {
+            get
+            {
+                return inhalt;
+            }
+
+            set
+            {
+                inhalt = value;
+            }
+        }
+
+        public bool Richtig
+        {
+            get
+            {
+                return richtig;
+            }
+
+            set
+            {
+                richtig = value;
+            }
+        }
     }
 }
