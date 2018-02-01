@@ -93,15 +93,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\seit-1999-moderiert-guenther-jauch-wer-wird-millionaer-.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\moderator-guenther-jauch.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Jauch1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\91OXosjxZdL.png" />
   </ItemGroup>
   <ItemGroup>

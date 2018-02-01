@@ -38,7 +38,9 @@
             this.buttonTeleJoker = new System.Windows.Forms.Button();
             this.buttonPubJoker = new System.Windows.Forms.Button();
             this.buttonZusatzJoker = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFrage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonA
@@ -130,13 +132,21 @@
             this.buttonZusatzJoker.Text = "Zusatzjoker";
             this.buttonZusatzJoker.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(193, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // Spielfenster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WerWirdMillionaer.Properties.Resources._91OXosjxZdL;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1284, 641);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonZusatzJoker);
             this.Controls.Add(this.buttonPubJoker);
             this.Controls.Add(this.buttonTeleJoker);
@@ -150,6 +160,7 @@
             this.Name = "Spielfenster";
             this.Text = "Spielfenster";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFrage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,5 +178,6 @@
         private System.Windows.Forms.Button buttonTeleJoker;
         private System.Windows.Forms.Button buttonPubJoker;
         private System.Windows.Forms.Button buttonZusatzJoker;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
