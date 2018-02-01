@@ -191,21 +191,25 @@ namespace WerWirdMillionaer
         private void button5050_Click(object sender, EventArgs e)
         {
             joker1.Benutzt = true;
+            button5050.Enabled = false;
         }
 
         private void buttonTeleJoker_Click(object sender, EventArgs e)
         {
             joker2.Benutzt = true;
+            buttonTeleJoker.Enabled = false;
         }
 
         private void buttonPubJoker_Click(object sender, EventArgs e)
         {
             joker3.Benutzt = true;
+            buttonPubJoker.Enabled = false;
         }
 
         private void buttonZusatzJoker_Click(object sender, EventArgs e)
         {
             joker3.Benutzt = true;
+            buttonZusatzJoker.Enabled = false;
         }
     }
 }

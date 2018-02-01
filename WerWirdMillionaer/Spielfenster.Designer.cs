@@ -32,7 +32,6 @@
             this.buttonC = new System.Windows.Forms.Button();
             this.buttonB = new System.Windows.Forms.Button();
             this.buttonD = new System.Windows.Forms.Button();
-            this.pictureBoxFrage = new System.Windows.Forms.PictureBox();
             this.labelFrage = new System.Windows.Forms.Label();
             this.button5050 = new System.Windows.Forms.Button();
             this.buttonTeleJoker = new System.Windows.Forms.Button();
@@ -40,7 +39,7 @@
             this.buttonZusatzJoker = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxJoker = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFrage)).BeginInit();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJoker)).BeginInit();
             this.SuspendLayout();
@@ -52,9 +51,9 @@
             this.buttonA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonA.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonA.Location = new System.Drawing.Point(193, 499);
+            this.buttonA.Location = new System.Drawing.Point(287, 499);
             this.buttonA.Name = "buttonA";
-            this.buttonA.Size = new System.Drawing.Size(447, 60);
+            this.buttonA.Size = new System.Drawing.Size(353, 60);
             this.buttonA.TabIndex = 0;
             this.buttonA.Text = "Antwort A";
             this.buttonA.UseVisualStyleBackColor = true;
@@ -66,9 +65,9 @@
             this.buttonC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonC.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonC.Location = new System.Drawing.Point(193, 565);
+            this.buttonC.Location = new System.Drawing.Point(287, 565);
             this.buttonC.Name = "buttonC";
-            this.buttonC.Size = new System.Drawing.Size(447, 60);
+            this.buttonC.Size = new System.Drawing.Size(353, 60);
             this.buttonC.TabIndex = 1;
             this.buttonC.Text = "Antwort C";
             this.buttonC.UseVisualStyleBackColor = true;
@@ -82,7 +81,7 @@
             this.buttonB.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonB.Location = new System.Drawing.Point(646, 499);
             this.buttonB.Name = "buttonB";
-            this.buttonB.Size = new System.Drawing.Size(447, 60);
+            this.buttonB.Size = new System.Drawing.Size(353, 60);
             this.buttonB.TabIndex = 2;
             this.buttonB.Text = "Antwort B";
             this.buttonB.UseVisualStyleBackColor = true;
@@ -96,29 +95,23 @@
             this.buttonD.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonD.Location = new System.Drawing.Point(646, 565);
             this.buttonD.Name = "buttonD";
-            this.buttonD.Size = new System.Drawing.Size(447, 60);
+            this.buttonD.Size = new System.Drawing.Size(353, 60);
             this.buttonD.TabIndex = 3;
             this.buttonD.Text = "Antwort D";
             this.buttonD.UseVisualStyleBackColor = true;
             // 
-            // pictureBoxFrage
-            // 
-            this.pictureBoxFrage.BackgroundImage = global::WerWirdMillionaer.Properties.Resources.Antwortkachel;
-            this.pictureBoxFrage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxFrage.Location = new System.Drawing.Point(311, 352);
-            this.pictureBoxFrage.Name = "pictureBoxFrage";
-            this.pictureBoxFrage.Size = new System.Drawing.Size(616, 82);
-            this.pictureBoxFrage.TabIndex = 4;
-            this.pictureBoxFrage.TabStop = false;
-            // 
             // labelFrage
             // 
-            this.labelFrage.AutoSize = true;
+            this.labelFrage.BackColor = System.Drawing.Color.Transparent;
             this.labelFrage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFrage.Location = new System.Drawing.Point(590, 377);
+            this.labelFrage.ForeColor = System.Drawing.Color.White;
+            this.labelFrage.Image = global::WerWirdMillionaer.Properties.Resources.Antwortkachel;
+            this.labelFrage.Location = new System.Drawing.Point(419, 346);
             this.labelFrage.Name = "labelFrage";
-            this.labelFrage.Size = new System.Drawing.Size(0, 25);
+            this.labelFrage.Size = new System.Drawing.Size(449, 85);
             this.labelFrage.TabIndex = 5;
+            this.labelFrage.Text = "Frage";
+            this.labelFrage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button5050
             // 
@@ -178,6 +171,34 @@
             this.pictureBoxJoker.TabStop = false;
             this.pictureBoxJoker.Visible = false;
             // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 25;
+            this.listBox1.Items.AddRange(new object[] {
+            "15\t€ 1 Milllionen",
+            "14\t€ 500.000",
+            "13\t€ 125.000",
+            "12\t€ 64.000",
+            "11\t€ 32.000",
+            "10\t€ 16.000",
+            "09\t€ 8.000",
+            "08\t€ 4.000",
+            "07\t€ 2.000",
+            "06\t€ 1.000",
+            "05\t€ 500",
+            "04\t€ 300",
+            "03\t€ 200",
+            "02\t€ 100",
+            "01\t€ 50"});
+            this.listBox1.Location = new System.Drawing.Point(1023, 21);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(233, 379);
+            this.listBox1.TabIndex = 12;
+            // 
             // Spielfenster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -185,24 +206,22 @@
             this.BackgroundImage = global::WerWirdMillionaer.Properties.Resources.Hintergrund;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1284, 641);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.pictureBoxJoker);
             this.Controls.Add(this.buttonZusatzJoker);
             this.Controls.Add(this.buttonPubJoker);
             this.Controls.Add(this.buttonTeleJoker);
             this.Controls.Add(this.button5050);
             this.Controls.Add(this.labelFrage);
-            this.Controls.Add(this.pictureBoxFrage);
             this.Controls.Add(this.buttonD);
             this.Controls.Add(this.buttonB);
             this.Controls.Add(this.buttonC);
             this.Controls.Add(this.buttonA);
             this.Name = "Spielfenster";
             this.Text = "Spielfenster";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFrage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJoker)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -212,7 +231,6 @@
         private System.Windows.Forms.Button buttonC;
         private System.Windows.Forms.Button buttonB;
         private System.Windows.Forms.Button buttonD;
-        private System.Windows.Forms.PictureBox pictureBoxFrage;
         private System.Windows.Forms.Label labelFrage;
         private System.Windows.Forms.Button button5050;
         private System.Windows.Forms.Button buttonTeleJoker;
@@ -220,5 +238,6 @@
         private System.Windows.Forms.Button buttonZusatzJoker;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBoxJoker;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
