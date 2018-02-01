@@ -14,13 +14,29 @@ namespace WerWirdMillionaer
     public partial class Spielfenster : Form
     {
         private List<Frage> fragen;
+        private string spielername;
+        private Boolean risiko;
 
+        public string Spielername
+        {
+            get
+            {
+                return spielername;
+            }
 
-        public Spielfenster(Boolean risiko)
+            set
+            {
+                spielername = value;
+            }
+        }
+
+        public Spielfenster(Boolean risiko, string spielername)
         {
             InitializeComponent();
             verbindeDatenbank();
             fragen = new List<Frage>();
+            this.risiko = risiko;
+            this.spielername = spielername;
         }
 
         private void verbindeDatenbank()
@@ -44,13 +60,13 @@ namespace WerWirdMillionaer
                 MessageBox.Show("Datenbankfehler");
             }
 
-            //Wenn die conection funktioniert
+
             if (right)
             {
                 OleDbCommand cmd = con.CreateCommand();
                 cmd.CommandText = "Select * from Fragen";
                 OleDbDataReader reader = cmd.ExecuteReader();
-                //Auslesen der Fragen und in das list fragen hinzufügen
+
                 while(reader.Read())
                 {
                     Frage f = new Frage();
@@ -65,7 +81,7 @@ namespace WerWirdMillionaer
                 reader = cmd.ExecuteReader();
                 string frage;
 
-                //Auslesen der Antworten und den Fragen zuordnen
+
                 while(reader.Read())
                 {
                     Antwort a = new Antwort();
@@ -73,7 +89,6 @@ namespace WerWirdMillionaer
                     frage = Convert.ToString(CheckDBNull(reader[1]));
                     a.Richtig = Convert.ToBoolean(CheckDBNull(reader[2]));
                     int i = 0;
-                    //Frage zur Antwort suchen und einfügen in die antwortliste
                     while(!frage.Equals(fragen[i].FrageID))
                     {
                         fragen[i].Antworten.Add(a);

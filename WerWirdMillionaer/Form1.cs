@@ -50,7 +50,7 @@ namespace WerWirdMillionaer
         {
             name = textBoxName.Text;
             risiko = false;
-            spiel1 = new Spielfenster(risiko);
+            spiel1 = new Spielfenster(risiko, name);
             spiel1.Visible = true;
         }
 
@@ -58,7 +58,7 @@ namespace WerWirdMillionaer
         {
             name = textBoxName.Text;
             risiko = true;
-            spiel1 = new Spielfenster(risiko);
+            spiel1 = new Spielfenster(risiko, name);
             spiel1.Visible = true;
         }
     }
