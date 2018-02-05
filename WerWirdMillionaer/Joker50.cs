@@ -8,9 +8,22 @@ namespace WerWirdMillionaer
 {
     class Joker50 : Joker
     {
-        public override void benutzeJoker(List<Frage> fragen)
+        public override void benutzeJoker(Frage frage)
         {
-            throw new NotImplementedException();
+            Random r = new Random();
+            int i = 0;
+            int j = 0;
+
+            while (j == i || frage.Antworten[j].Richtig || frage.Antworten[i].Richtig) 
+            {
+                if(i == j)
+                {
+                    i = r.Next(0, 3);
+                    j = r.Next(0, 3);
+                }
+            }
+            frage.Antworten[i].Joker50 = true;
+            frage.Antworten[j].Joker50 = true;
         }
     }
 }
