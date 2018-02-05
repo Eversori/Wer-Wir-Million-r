@@ -278,9 +278,17 @@ namespace WerWirdMillionaer
             }
             else
             {
-                ausgewaelterButton.ForeColor = buttonA.ForeColor;
-                buttonA.ForeColor = Color.Orange;
-                ausgewaelterButton = buttonA;
+                if (naechsteFrage == false)
+                {
+
+                    ausgewaelterButton.ForeColor = buttonA.ForeColor;
+                    buttonA.ForeColor = Color.Orange;
+                    ausgewaelterButton = buttonA;
+                }
+                else
+                {
+                    loesungCheck();
+                }
             }
         }
 
@@ -356,9 +364,16 @@ namespace WerWirdMillionaer
             }
             else
             {
-                ausgewaelterButton.ForeColor = buttonB.ForeColor;
-                buttonB.ForeColor = Color.Orange;
-                ausgewaelterButton = buttonB;
+                if (naechsteFrage == false)
+                {
+                    ausgewaelterButton.ForeColor = buttonB.ForeColor;
+                    buttonB.ForeColor = Color.Orange;
+                    ausgewaelterButton = buttonB;
+                }
+                else
+                {
+                    loesungCheck();
+                }
             }
         }
 
@@ -370,9 +385,16 @@ namespace WerWirdMillionaer
             }
             else
             {
-                ausgewaelterButton.ForeColor = buttonC.ForeColor;
-                buttonC.ForeColor = Color.Orange;
-                ausgewaelterButton = buttonC;
+                if (naechsteFrage == false)
+                {
+                    ausgewaelterButton.ForeColor = buttonC.ForeColor;
+                    buttonC.ForeColor = Color.Orange;
+                    ausgewaelterButton = buttonC;
+                }
+                else
+                {
+                    loesungCheck();
+                }
             }
         }
 
@@ -384,9 +406,17 @@ namespace WerWirdMillionaer
             }
             else
             {
-                ausgewaelterButton.ForeColor = buttonD.ForeColor;
-                buttonD.ForeColor = Color.Orange;
-                ausgewaelterButton = buttonD;
+                if (naechsteFrage == false)
+                {
+
+                    ausgewaelterButton.ForeColor = buttonD.ForeColor;
+                    buttonD.ForeColor = Color.Orange;
+                    ausgewaelterButton = buttonD;
+                }
+                else
+                {
+                    loesungCheck();
+                }
             }
         }
     }
