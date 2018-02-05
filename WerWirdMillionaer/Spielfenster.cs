@@ -23,6 +23,8 @@ namespace WerWirdMillionaer
         private Joker joker2;
         private Joker joker3;
         private Joker joker4;
+        private Button ausgewaelterButton=new Button();
+        private Boolean naechsteFrage=false;
 
         public string Spielername
         {
@@ -215,6 +217,111 @@ namespace WerWirdMillionaer
         {
             joker3.Benutzt = true;
             buttonZusatzJoker.Enabled = false;
+        }
+
+        private void buttonA_Click(object sender, EventArgs e)
+        {
+            if(buttonA==ausgewaelterButton)
+            {
+                loesungCheck();
+            }
+            else
+            {
+                ausgewaelterButton.ForeColor = buttonA.ForeColor;
+                buttonA.ForeColor = Color.Orange;
+                ausgewaelterButton = buttonA;
+            }
+        }
+
+        private void loesungCheck()
+        {
+            if(naechsteFrage==false)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    if (aktuelleFrage.Antworten[i].Richtig == true)
+                    {
+                        if (ausgewaelterButton.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
+                        {
+                            ausgewaelterButton.ForeColor = Color.LightGreen;
+                            naechsteFrage = true;
+                        }
+                        else
+                        {
+                            ausgewaelterButton.ForeColor = Color.Red;
+                            if (buttonA.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
+                            {
+                                buttonA.ForeColor = Color.LightGreen;
+                            }
+                            else if (buttonB.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
+                            {
+                                buttonB.ForeColor = Color.LightGreen;
+                            }
+                            else if (buttonC.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
+                            {
+                                buttonC.ForeColor = Color.LightGreen;
+                            }
+                            else if (buttonD.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
+                            {
+                                buttonD.ForeColor = Color.LightGreen;
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                next();
+                naechsteFrage = false;
+            }
+        }
+
+        private void next()
+        {
+            stufe++;
+            loadFrage();
+        }
+
+        private void buttonB_Click(object sender, EventArgs e)
+        {
+            if (buttonB == ausgewaelterButton)
+            {
+                loesungCheck();
+            }
+            else
+            {
+                ausgewaelterButton.ForeColor = buttonB.ForeColor;
+                buttonB.ForeColor = Color.Orange;
+                ausgewaelterButton = buttonB;
+            }
+        }
+
+        private void buttonC_Click(object sender, EventArgs e)
+        {
+            if (buttonC == ausgewaelterButton)
+            {
+                loesungCheck();
+            }
+            else
+            {
+                ausgewaelterButton.ForeColor = buttonC.ForeColor;
+                buttonC.ForeColor = Color.Orange;
+                ausgewaelterButton = buttonC;
+            }
+        }
+
+        private void buttonD_Click(object sender, EventArgs e)
+        {
+            if (buttonD == ausgewaelterButton)
+            {
+                loesungCheck();
+            }
+            else
+            {
+                ausgewaelterButton.ForeColor = buttonD.ForeColor;
+                buttonD.ForeColor = Color.Orange;
+                ausgewaelterButton = buttonD;
+            }
         }
     }
 }
