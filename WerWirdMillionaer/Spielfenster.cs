@@ -218,34 +218,44 @@ namespace WerWirdMillionaer
                 {
                     if (aktuelleFrage.Antworten[i].Joker50)
                     {
-                        buttonA.Enabled = false;
+                        buttonA.Text = "-";
                     }
                 }
+            }
 
+            for (int i = 0; i <= 4; i++)
+            {
                 if (buttonB.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
                 {
                     if (aktuelleFrage.Antworten[i].Joker50)
                     {
-                        buttonB.Enabled = false;
+                        buttonB.Text = "-";
                     }
                 }
+            }
 
+            for (int i = 0; i <= 4; i++)
+            {
                 if (buttonC.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
                 {
                     if (aktuelleFrage.Antworten[i].Joker50)
                     {
-                        buttonC.Enabled = false;
+                        buttonC.Text = "-";
                     }
                 }
+            }
 
+            for (int i = 0; i <= 4; i++)
+            {
                 if (buttonD.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
                 {
                     if (aktuelleFrage.Antworten[i].Joker50)
                     {
-                        buttonD.Enabled = false;
+                        buttonD.Text = "-";
                     }
                 }
             }
+            
         }
 
         private void buttonPubJoker_Click(object sender, EventArgs e)
