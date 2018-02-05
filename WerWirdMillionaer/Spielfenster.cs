@@ -195,7 +195,8 @@ namespace WerWirdMillionaer
         {
             joker1.Benutzt = true;
             button5050.Enabled = false;
-            joker1.benutzeJoker(fragen);
+            joker1.benutzeJoker(aktuelleFrage);
+            
         }
 
         private void buttonTeleJoker_Click(object sender, EventArgs e)
