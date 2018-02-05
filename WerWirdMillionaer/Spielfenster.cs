@@ -25,7 +25,7 @@ namespace WerWirdMillionaer
         private Joker joker4;
         private Button ausgewaelterButton=new Button();
         private Boolean naechsteFrage=false;
-
+        
         public string Spielername
         {
             get
@@ -49,6 +49,7 @@ namespace WerWirdMillionaer
 
             this.risiko = risiko;
             this.spielername = spielername;
+            
             checkJoker();
         }
 
@@ -323,11 +324,11 @@ namespace WerWirdMillionaer
             {
                 next();
                 naechsteFrage = false;
-                Button faker = new Button();
-                buttonA.ForeColor = faker.ForeColor;
-                buttonB.ForeColor = faker.ForeColor;
-                buttonC.ForeColor = faker.ForeColor;
-                buttonD.ForeColor = faker.ForeColor;
+                
+                buttonA.ForeColor = Color.White;
+                buttonB.ForeColor = Color.White;
+                buttonC.ForeColor = Color.White;
+                buttonD.ForeColor = Color.White;
             }
         }
 
