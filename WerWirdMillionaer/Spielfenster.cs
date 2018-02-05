@@ -305,6 +305,8 @@ namespace WerWirdMillionaer
                             {
                                 buttonD.ForeColor = Color.LightGreen;
                             }
+                            MessageBox.Show("Du Loser hast Verloren");
+                            this.Close();
                         }
                     }
                 }
@@ -323,8 +325,16 @@ namespace WerWirdMillionaer
 
         private void next()
         {
-            stufe++;
-            loadFrage();
+            if (stufe != 15)
+            {
+                stufe++;
+                loadFrage();
+            }
+            else
+            {
+                MessageBox.Show("Du Keck hast Gewonnen!!");
+                this.Close();
+            }
         }
 
         private void buttonB_Click(object sender, EventArgs e)
