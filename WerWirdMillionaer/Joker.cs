@@ -51,6 +51,6 @@ namespace WerWirdMillionaer
             }
         }
 
-        public abstract void benutzeJoker(List<Frage> fragen);
+        public abstract void benutzeJoker(Frage frage);
     }
 }

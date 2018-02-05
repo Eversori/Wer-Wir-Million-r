@@ -56,6 +56,7 @@
             this.buttonA.TabIndex = 0;
             this.buttonA.Text = "Antwort A";
             this.buttonA.UseVisualStyleBackColor = true;
+            this.buttonA.Click += new System.EventHandler(this.buttonA_Click);
             // 
             // buttonC
             // 
@@ -71,6 +72,7 @@
             this.buttonC.TabIndex = 1;
             this.buttonC.Text = "Antwort C";
             this.buttonC.UseVisualStyleBackColor = true;
+            this.buttonC.Click += new System.EventHandler(this.buttonC_Click);
             // 
             // buttonB
             // 
@@ -86,6 +88,7 @@
             this.buttonB.TabIndex = 2;
             this.buttonB.Text = "Antwort B";
             this.buttonB.UseVisualStyleBackColor = true;
+            this.buttonB.Click += new System.EventHandler(this.buttonB_Click);
             // 
             // buttonD
             // 
@@ -101,6 +104,7 @@
             this.buttonD.TabIndex = 3;
             this.buttonD.Text = "Antwort D";
             this.buttonD.UseVisualStyleBackColor = true;
+            this.buttonD.Click += new System.EventHandler(this.buttonD_Click);
             // 
             // labelFrage
             // 
