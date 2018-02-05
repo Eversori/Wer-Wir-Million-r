@@ -63,9 +63,29 @@ namespace WerWirdMillionaer.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5050Verbraucht {
+            get {
+                object obj = ResourceManager.GetObject("_5050Verbraucht", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Antwortkachel {
             get {
                 object obj = ResourceManager.GetObject("Antwortkachel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fuenfzig {
+            get {
+                object obj = ResourceManager.GetObject("fuenfzig", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +103,59 @@ namespace WerWirdMillionaer.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TelefonJoker {
+        internal static System.Drawing.Bitmap Publikumsjoker {
             get {
-                object obj = ResourceManager.GetObject("TelefonJoker", resourceCulture);
+                object obj = ResourceManager.GetObject("Publikumsjoker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PublikumsjokerVerbraucht {
+            get {
+                object obj = ResourceManager.GetObject("PublikumsjokerVerbraucht", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelefonJoker1 {
+            get {
+                object obj = ResourceManager.GetObject("TelefonJoker1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TelefonJokerVerbraucht {
+            get {
+                object obj = ResourceManager.GetObject("TelefonJokerVerbraucht", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ZusatzJoker {
+            get {
+                object obj = ResourceManager.GetObject("ZusatzJoker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ZusatzJokerVerbraucht {
+            get {
+                object obj = ResourceManager.GetObject("ZusatzJokerVerbraucht", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -106,6 +106,15 @@
     <Content Include="Millionaer1.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\ZusatzJokerVerbraucht.png" />
+    <None Include="Resources\PublikumsjokerVerbraucht.png" />
+    <None Include="Resources\5050Verbraucht.png" />
+    <None Include="Resources\TelefonJokerVerbraucht.png" />
+    <None Include="Resources\fuenfzig.png" />
+    <None Include="Resources\ZusatzJoker1.png" />
+    <None Include="Resources\Publikumsjoker.png" />
+    <None Include="Resources\TelefonJoker.png" />
+    <None Include="Resources\5050.png" />
     <None Include="Resources\TelefonJoker.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
