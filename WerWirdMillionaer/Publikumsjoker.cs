@@ -8,7 +8,7 @@ namespace WerWirdMillionaer
 {
     class Publikumsjoker : Joker
     {
-        public override void benutzeJoker(List<Frage> fragen)
+        public override void benutzeJoker(Frage frage)
         {
             throw new NotImplementedException();
         }
