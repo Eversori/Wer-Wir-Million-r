@@ -38,10 +38,8 @@
             this.buttonPubJoker = new System.Windows.Forms.Button();
             this.buttonZusatzJoker = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxJoker = new System.Windows.Forms.PictureBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJoker)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonA
@@ -171,15 +169,6 @@
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBoxJoker
-            // 
-            this.pictureBoxJoker.Location = new System.Drawing.Point(258, 54);
-            this.pictureBoxJoker.Name = "pictureBoxJoker";
-            this.pictureBoxJoker.Size = new System.Drawing.Size(100, 50);
-            this.pictureBoxJoker.TabIndex = 10;
-            this.pictureBoxJoker.TabStop = false;
-            this.pictureBoxJoker.Visible = false;
-            // 
             // listBox1
             // 
             this.listBox1.BackColor = System.Drawing.Color.RoyalBlue;
@@ -216,7 +205,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1284, 641);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.pictureBoxJoker);
             this.Controls.Add(this.buttonZusatzJoker);
             this.Controls.Add(this.buttonPubJoker);
             this.Controls.Add(this.buttonTeleJoker);
@@ -229,7 +217,6 @@
             this.Name = "Spielfenster";
             this.Text = "Spielfenster";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxJoker)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -246,7 +233,6 @@
         private System.Windows.Forms.Button buttonPubJoker;
         private System.Windows.Forms.Button buttonZusatzJoker;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBoxJoker;
         private System.Windows.Forms.ListBox listBox1;
     }
 }
