@@ -15,12 +15,9 @@ namespace WerWirdMillionaer
             int j = 0;
 
             while (j == i || frage.Antworten[j].Richtig || frage.Antworten[i].Richtig) 
-            {
-                if(i == j)
-                {
+            {            
                     i = r.Next(0, 3);
                     j = r.Next(0, 3);
-                }
             }
             frage.Antworten[i].Joker50 = true;
             frage.Antworten[j].Joker50 = true;

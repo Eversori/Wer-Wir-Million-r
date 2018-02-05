@@ -198,8 +198,9 @@ namespace WerWirdMillionaer
         {
             joker1.Benutzt = true;
             button5050.Enabled = false;
+            button5050.BackgroundImage = Properties.Resources._5050Verbraucht;
             joker1.benutzeJoker(aktuelleFrage);
-            
+            markiereButtons();
         }
 
         private void buttonTeleJoker_Click(object sender, EventArgs e)
@@ -212,7 +213,7 @@ namespace WerWirdMillionaer
 
         private void markiereButtons()
         {
-            for (int i = 0; i <= 4; i++)
+            for (int i = 0; i < 4; i++)
             {
                 if (buttonA.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
                 {
@@ -221,10 +222,6 @@ namespace WerWirdMillionaer
                         buttonA.Text = "-";
                     }
                 }
-            }
-
-            for (int i = 0; i <= 4; i++)
-            {
                 if (buttonB.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
                 {
                     if (aktuelleFrage.Antworten[i].Joker50)
@@ -232,10 +229,6 @@ namespace WerWirdMillionaer
                         buttonB.Text = "-";
                     }
                 }
-            }
-
-            for (int i = 0; i <= 4; i++)
-            {
                 if (buttonC.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
                 {
                     if (aktuelleFrage.Antworten[i].Joker50)
@@ -243,10 +236,6 @@ namespace WerWirdMillionaer
                         buttonC.Text = "-";
                     }
                 }
-            }
-
-            for (int i = 0; i <= 4; i++)
-            {
                 if (buttonD.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
                 {
                     if (aktuelleFrage.Antworten[i].Joker50)
