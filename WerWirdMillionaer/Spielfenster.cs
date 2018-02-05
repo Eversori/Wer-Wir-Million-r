@@ -15,6 +15,7 @@ namespace WerWirdMillionaer
     {
         private List<Frage> fragen;
         private List<Frage> benuzteFragen;
+        private Frage aktuelleFrage;
         private string spielername;
         private Boolean risiko;
         private int stufe=1;
@@ -72,7 +73,7 @@ namespace WerWirdMillionaer
             List<Frage> moeglicheFragen = new List<Frage>();
             for(int i=0;i<fragen.Count;i++)
             {
-                if(fragen[i].FrageID==level)
+                if(fragen[i].Level==level)
                 {
                     if(!benuzteFragen.Contains(fragen[i]))
                     moeglicheFragen.Add(fragen[i]);
@@ -82,17 +83,18 @@ namespace WerWirdMillionaer
             Random r = new Random();
             
             int fragenummer = r.Next(0, moeglicheFragen.Count-1);
-            
 
-            labelFrage.Text= moeglicheFragen[fragenummer].Inhalt;
+            aktuelleFrage = moeglicheFragen[fragenummer];
+
+            labelFrage.Text= aktuelleFrage.Inhalt;
             //ButtonA
-            buttonA.Text = moeglicheFragen[fragenummer].Antworten[0].Inhalt;
+            buttonA.Text = aktuelleFrage.Antworten[0].Inhalt;
             //ButtonB
-            buttonB.Text = moeglicheFragen[fragenummer].Antworten[1].Inhalt;
+            buttonB.Text = aktuelleFrage.Antworten[1].Inhalt;
             //ButtonC
-            buttonC.Text = moeglicheFragen[fragenummer].Antworten[2].Inhalt;
+            buttonC.Text = aktuelleFrage.Antworten[2].Inhalt;
             //ButtonD
-            buttonD.Text = moeglicheFragen[fragenummer].Antworten[3].Inhalt;
+            buttonD.Text = aktuelleFrage.Antworten[3].Inhalt;
 
 
         }
