@@ -274,6 +274,11 @@ namespace WerWirdMillionaer
             {
                 next();
                 naechsteFrage = false;
+                Button faker = new Button();
+                buttonA.ForeColor = faker.ForeColor;
+                buttonB.ForeColor = faker.ForeColor;
+                buttonC.ForeColor = faker.ForeColor;
+                buttonD.ForeColor = faker.ForeColor;
             }
         }
 
