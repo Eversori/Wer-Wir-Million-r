@@ -203,7 +203,51 @@ namespace WerWirdMillionaer
         {
             joker2.Benutzt = true;
             buttonTeleJoker.Enabled = false;
-            joker2.benutzeJoker(fragen);
+            joker2.benutzeJoker(aktuelleFrage);
+            markiereButtons();
+        }
+
+        private void markiereButtons()
+        {
+            verknuepfeButtonAntwort();
+        }
+
+        private void verknuepfeButtonAntwort()
+        {
+            for(int i = 0; i <= 4; i++)
+            {
+                if (buttonA.Text.Equals(aktuelleFrage.Antworten[i]))
+                {
+                    if(aktuelleFrage.Antworten[i].Joker50)
+                    {
+                        buttonA.Enabled = false;
+                    }
+                }
+
+                if (buttonB.Text.Equals(aktuelleFrage.Antworten[i]))
+                {
+                    if (aktuelleFrage.Antworten[i].Joker50)
+                    {
+                        buttonB.Enabled = false;
+                    }
+                }
+
+                if (buttonC.Text.Equals(aktuelleFrage.Antworten[i]))
+                {
+                    if (aktuelleFrage.Antworten[i].Joker50)
+                    {
+                        buttonC.Enabled = false;
+                    }
+                }
+
+                if (buttonD.Text.Equals(aktuelleFrage.Antworten[i]))
+                {
+                    if (aktuelleFrage.Antworten[i].Joker50)
+                    {
+                        buttonD.Enabled = false;
+                    }
+                }
+            }
         }
 
         private void buttonPubJoker_Click(object sender, EventArgs e)
