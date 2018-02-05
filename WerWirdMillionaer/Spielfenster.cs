@@ -212,22 +212,17 @@ namespace WerWirdMillionaer
 
         private void markiereButtons()
         {
-            verknuepfeButtonAntwort();
-        }
-
-        private void verknuepfeButtonAntwort()
-        {
-            for(int i = 0; i <= 4; i++)
+            for (int i = 0; i <= 4; i++)
             {
-                if (buttonA.Text.Equals(aktuelleFrage.Antworten[i]))
+                if (buttonA.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
                 {
-                    if(aktuelleFrage.Antworten[i].Joker50)
+                    if (aktuelleFrage.Antworten[i].Joker50)
                     {
                         buttonA.Enabled = false;
                     }
                 }
 
-                if (buttonB.Text.Equals(aktuelleFrage.Antworten[i]))
+                if (buttonB.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
                 {
                     if (aktuelleFrage.Antworten[i].Joker50)
                     {
@@ -235,7 +230,7 @@ namespace WerWirdMillionaer
                     }
                 }
 
-                if (buttonC.Text.Equals(aktuelleFrage.Antworten[i]))
+                if (buttonC.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
                 {
                     if (aktuelleFrage.Antworten[i].Joker50)
                     {
@@ -243,7 +238,7 @@ namespace WerWirdMillionaer
                     }
                 }
 
-                if (buttonD.Text.Equals(aktuelleFrage.Antworten[i]))
+                if (buttonD.Text.Equals(aktuelleFrage.Antworten[i].Inhalt))
                 {
                     if (aktuelleFrage.Antworten[i].Joker50)
                     {

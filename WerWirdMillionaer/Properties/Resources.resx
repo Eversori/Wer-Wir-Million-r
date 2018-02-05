@@ -118,13 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Hintergrund" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\91OXosjxZdL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Antwortkachel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Antwortkachel.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TelefonJoker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TelefonJoker.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ZusatzJoker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZusatzJoker1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Publikumsjoker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Publikumsjoker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hintergrund" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\91OXosjxZdL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TelefonJoker1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelefonJoker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fuenfzig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fuenfzig.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PublikumsjokerVerbraucht" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PublikumsjokerVerbraucht.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TelefonJokerVerbraucht" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TelefonJokerVerbraucht.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZusatzJokerVerbraucht" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZusatzJokerVerbraucht.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_5050Verbraucht" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5050Verbraucht.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
