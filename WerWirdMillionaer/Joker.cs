@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WerWirdMillionaer
 {
-    class Joker
+    abstract class Joker
     {
         private Boolean benutzt;
         private String name;
@@ -50,5 +50,7 @@ namespace WerWirdMillionaer
                 viable = value;
             }
         }
+
+        public abstract void benutzeJoker(List<Frage> fragen);
     }
 }

@@ -8,14 +8,9 @@ namespace WerWirdMillionaer
 {
     class Joker50 : Joker
     {
-        public Joker50()
+        public override void benutzeJoker(List<Frage> fragen)
         {
-            benutzeJoker();
-        }
-
-        private void benutzeJoker()
-        {
-            //TODO: Joker benutzen editieren!
+            throw new NotImplementedException();
         }
     }
 }
