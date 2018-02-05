@@ -8,7 +8,7 @@ namespace WerWirdMillionaer
 {
     class Telefonjoker : Joker
     {
-        public override void benutzeJoker(List<Frage> fragen)
+        public override void benutzeJoker(Frage fragen)
         {
             throw new NotImplementedException();
         }
