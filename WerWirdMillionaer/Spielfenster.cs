@@ -82,6 +82,7 @@ namespace WerWirdMillionaer
             Random r = new Random();
             
             int fragenummer = r.Next(0, moeglicheFragen.Count-1);
+            
 
             labelFrage.Text= moeglicheFragen[fragenummer].Inhalt;
             //ButtonA
