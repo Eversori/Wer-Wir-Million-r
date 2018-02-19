@@ -88,16 +88,41 @@ namespace WerWirdMillionaer
             int fragenummer = r.Next(0, moeglicheFragen.Count-1);
 
             aktuelleFrage = moeglicheFragen[fragenummer];
+            benuzteFragen.Add(aktuelleFrage);
 
             labelFrage.Text= aktuelleFrage.Inhalt;
+
+            List<Int32>liste=new List<Int32>();
+            int antwortos = 0;
             //ButtonA
-            buttonA.Text = aktuelleFrage.Antworten[0].Inhalt;
+            liste.Add(r.Next(0, 4));
+            buttonA.Text = aktuelleFrage.Antworten[liste[0]].Inhalt;
             //ButtonB
-            buttonB.Text = aktuelleFrage.Antworten[1].Inhalt;
+            do
+            {
+                r = new Random();
+                antwortos = r.Next(0, 4);
+            } while (liste.Contains(antwortos));
+            liste.Add(antwortos);
+
+            buttonB.Text = aktuelleFrage.Antworten[liste[1]].Inhalt;
             //ButtonC
-            buttonC.Text = aktuelleFrage.Antworten[2].Inhalt;
+            do
+            {
+                r = new Random();
+                antwortos = r.Next(0, 4);
+            } while (liste.Contains(antwortos));
+            liste.Add(antwortos);
+            buttonC.Text = aktuelleFrage.Antworten[liste[2]].Inhalt;
             //ButtonD
-            buttonD.Text = aktuelleFrage.Antworten[3].Inhalt;
+            do
+            {
+                r = new Random();
+                antwortos = r.Next(0, 4);
+            } while (liste.Contains(antwortos));
+            liste.Add(antwortos);
+            
+            buttonD.Text = aktuelleFrage.Antworten[liste[3]].Inhalt;
 
 
         }
