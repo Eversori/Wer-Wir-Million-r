@@ -10,7 +10,7 @@ namespace WerWirdMillionaer
     {
         public override void benutzeJoker(Frage frage)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

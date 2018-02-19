@@ -207,8 +207,8 @@ namespace WerWirdMillionaer
         {
             joker2.Benutzt = true;
             buttonTeleJoker.Enabled = false;
-            joker2.benutzeJoker(aktuelleFrage);
-            markiereButtons();
+            buttonTeleJoker.BackgroundImage = Properties.Resources.TelefonJokerVerbraucht;
+            MessageBox.Show("Rufe einen Mitschüler auf");
         }
 
         private void markiereButtons()
