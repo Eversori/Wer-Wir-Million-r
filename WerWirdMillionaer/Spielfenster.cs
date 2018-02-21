@@ -85,7 +85,7 @@ namespace WerWirdMillionaer
 
             Random r = new Random();
             
-            int fragenummer = r.Next(0, moeglicheFragen.Count-1);
+            int fragenummer = r.Next(0, moeglicheFragen.Count);
 
             aktuelleFrage = moeglicheFragen[fragenummer];
             benuzteFragen.Add(aktuelleFrage);
@@ -123,6 +123,9 @@ namespace WerWirdMillionaer
             liste.Add(antwortos);
             
             buttonD.Text = aktuelleFrage.Antworten[liste[3]].Inhalt;
+
+
+            ausgewaelterButton = new Button();
 
 
         }
